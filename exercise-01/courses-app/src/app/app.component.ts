@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Course } from 'projects/models/src/src/app';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'courses-app';
+
+  courseArray: Course[] = [
+    {
+      name: "SWAFE", code: "somecode", ects: 5
+    },
+    {
+      name: "SWAPK", code: "someothercode", ects: 10
+    }
+  ]
 }
